@@ -1,0 +1,69 @@
+/* Resetting margins and setting box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrollbars */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('assets/quantum-bg.avif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#quantum-maze {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Center the canvas with a slight border */
+#quantum-canvas {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8); /* A dark semi-transparent canvas background */
+    border: 3px solid rgba(255, 255, 255, 0.6); /* Border for the canvas */
+}
+
+/* Controls panel styling */
+#controls {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#controls button,
+#controls input {
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#controls button:hover,
+#controls input:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#controls label {
+    color: white;
+}

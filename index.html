@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumMaze</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quantum-maze">
+        <div id="controls">
+            <button id="toggle-state">Toggle Wave/Particle</button>
+            <button id="entangle-particles">Entangle Particles</button>
+            <button id="pause-play">Pause</button>
+            <button id="save-image">Save State</button>
+            <button id="toggle-music">Music: Off</button>
+            <label>
+                Particle Count:
+                <input type="range" id="particle-count" min="10" max="100" step="10" value="50">
+            </label>
+        </div>
+        <audio id="background-music" loop>
+            <source src="assets/bg-music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <canvas id="quantum-canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
